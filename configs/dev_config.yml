@@ -1,0 +1,153 @@
+ITHR:
+    BASE_PATH: "D:\\104"
+    STAGE_1: "stageOne"
+    CV:  # under date subdirectory
+        FILE_NAME: "modelForStageOne.csv"
+        NAME_ID: "姓名(104代碼)"
+        NAME: "姓名"
+        ID: "104代碼"
+        WORK_EXP: "工作經驗"
+        WORK_EXPS: "experiences"
+    TITLES:
+        FILE_NAME: "titles.xlsx"
+        SHEET_NAME: "工作表1"
+    NON_DUP_LST:
+        FILE_NAME: "non_duplicated_lst.csv"
+        DATE: "日期"
+        DATE_RANGE: 29  # n-m+1
+        OUTPUT_COLUMNS:
+            - 姓名
+            - 104代碼
+            - 日期
+    STAGE_2: "stageTwo"
+    OUTPUT_IDS:  # under date subdirectory
+        FILE_NAME: "104_ids.xlsx"
+        NUM_LIMIT: 50
+
+ALL_CV:
+    FILE_NAMES: "file_names"
+    SUB_DIR: "stageTwo"
+JD:
+    FILE_NAME: "JD.csv"
+REC_CV:  # recommendation output, under date subdirectory
+    SUB_DIR: "output"
+    INPUT_COLUMNS:
+        SENIORITY:
+            NAME: "seniority"
+            LENGTH: "length"
+        WORK_EXPERIENCE:
+            NAME: "工作經驗"
+            JOB_TITLE: "job_titles"
+            JOB_CATEGORY: "job_category"
+            WORK_CONTENTS: "work_contents"
+            LENGTH: "length"
+        EDUCATIONAL_BACKGROUND:
+            NAME: "教育背景"
+            EDU_BACKGROUND: "edu_background"
+            LENGTH: "length"
+        HIGHEST_EDUCATION:
+            NAME: "教育背景一"
+            EDU_DETAILS: "education_details"
+            HIGH_EDU: "highest_education"
+            LENGTH: "length"
+        WORK_SENIORITY:
+            - 工作經驗年資一
+            - 工作經驗年資二
+            - 工作經驗年資三
+            - 工作經驗年資四
+            - 工作經驗年資五
+            - 工作經驗年資六
+            - 工作經驗年資七
+            - 工作經驗年資八
+            - 工作經驗年資九
+            - 工作經驗年資十
+        JOB_TITLES:
+            - 職務名稱一
+            - 職務名稱二
+            - 職務名稱三
+            - 職務名稱四
+            - 職務名稱五
+            - 職務名稱六
+            - 職務名稱七
+            - 職務名稱八
+            - 職務名稱九
+            - 職務名稱十
+        JOB_CATS:
+            - 職務類別一
+            - 職務類別二
+            - 職務類別三
+            - 職務類別四
+            - 職務類別五
+            - 職務類別六
+            - 職務類別七
+            - 職務類別八
+            - 職務類別九
+            - 職務類別十
+        JOB_CONTS:
+            - 工作內容一
+            - 工作內容二
+            - 工作內容三
+            - 工作內容四
+            - 工作內容五
+            - 工作內容六
+            - 工作內容七
+            - 工作內容八
+            - 工作內容九
+            - 工作內容十
+        EDU_BGS:
+            - 教育背景一
+            - 教育背景二
+            - 教育背景三
+            - 教育背景四
+            - 教育背景五
+        EDU_HIGH_BG:
+            - 學校
+            - 科系
+            - 學位
+        TALENT:
+            - 才能專長
+    ADD_COLUMNS:
+        - 職缺1正確輸入1錯誤輸入0
+        - 職缺2正確輸入1錯誤輸入0
+        - 通過書審1正確輸入1未通過0
+        - 初試職缺
+    OUTPUT_COLUMNS:
+        - 104代碼
+        - 姓名
+        - ans1
+        - ans2
+        - score1
+        - score2
+        - 職缺1正確輸入1錯誤輸入0
+        - 職缺2正確輸入1錯誤輸入0
+        - 通過書審1正確輸入1未通過0
+        - 初試職缺
+#        - note
+#        - 年齡  # FIXME: for debug
+#        - 教育背景一  # FIXME: for debug
+#        - 教育背景二  # FIXME: for debug
+EMD_MODEL:
+    BASE_PATH: "C:\\Users\\A9933\\Desktop\\tao-8k"
+TITLES:
+#    - 保單行政人員
+#    - 保全服務部專案人員
+#    - 客服人員
+#    - 核保人員
+#    - 理賠審核人員
+    - JAVA軟體工程師
+    - .Net軟體工程師
+    - AS400軟體工程師
+    - APP軟體工程師
+    - 前端軟體工程師
+    - 視覺軟體工程師
+    - 軟體測試工程師
+    - 數據分析師
+    - 網路通訊管理工程師
+    - 機房環境管理工程師
+    - 系統工程師
+    - 資料庫管理師
+DEVICE: 'cpu'  # cpu, cuda
+EMAIL:
+    SENDER: "itresource.life@fubon.com"
+    MAINTAINER: "rain.yeh@fubon.com;cinglin.yang@fubon.com;joyce.cy.chou@fubon.com"
+    MANAGER: "fish.chiu@fubon.com;wenchuan.chen@fubon.com;kuyang.lin@fubon.com;winny.cl.yang@fubon.com;lisa.yh.chen@fubon.com;jiunchi.chen@fubon.com;chungkai.wang@fubon.com;jaco.huang@fubon.com;jonah.wang@fubon.com;yaochun.liu@fubon.com; yuting.liu@fubon.com; ivan2.chiang@fubon.com;jerry.ko@fubon.com;roger.hsieh@fubon.com"
